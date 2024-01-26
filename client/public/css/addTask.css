@@ -1,0 +1,61 @@
+.container-task {
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.container-task form {
+    width: 55%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+#title {
+    border-radius: 5px;
+    width: 90%;
+    height: 10%;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: var(--white);
+    font-size: 1.2em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 10px -5px, rgba(0, 0, 0, 0.3) 0px 5px 10px -8px;
+    border: 1px solid gray;
+}
+
+.container-task textarea {
+    resize: none;
+    width: 90%;
+    height: auto;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 10px -5px, rgba(0, 0, 0, 0.3) 0px 5px 10px -8px;
+    font-size: 1.2em;
+    border: 1px solid gray;
+    background-color: var(--white);
+}
+
+
+#add{
+    cursor: pointer;
+    color: black;
+    padding: 2% 4%;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.2em;
+    background-color: var(--islandgreen);
+    margin-bottom: 5%;
+}
+
+#add:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+

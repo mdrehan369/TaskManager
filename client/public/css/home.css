@@ -1,0 +1,38 @@
+:root {
+    --islandgreen: #2BAE66;
+    --white: #FCF6F5;
+    --dark: #092635;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    background-color: var(--white);
+    min-height: 88vh;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#addtask{
+    cursor: pointer;
+    color: black;
+    padding: 1% 2%;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.2em;
+    background-color: var(--islandgreen);
+    margin-bottom: 5%;
+}
+
+#addtask:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
