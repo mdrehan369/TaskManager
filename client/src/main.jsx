@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './components/Login.jsx'
 import Home from './components/Home.jsx'
 import AddTasks from './components/AddTasks.jsx'
+// import 'dotenv/config.js'
 
 const router = createBrowserRouter([
     {

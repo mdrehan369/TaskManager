@@ -9,6 +9,7 @@ export const checkToken = (req, res, next) => {
         const token = bearer[1];
   
         const decode = Jwt.verify(token, process.env.JWT_SECRET_KEY);
+        req.user = decode;
         next();
       } else {
         res.sendStatus(403);

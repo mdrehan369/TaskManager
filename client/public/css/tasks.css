@@ -31,7 +31,8 @@
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 1.5em;
-} 
+    margin: 10px;
+}
 
 .main .btn {
     width: 100%;

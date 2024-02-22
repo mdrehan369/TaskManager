@@ -3,7 +3,6 @@ import AWS from "aws-sdk";
 
 export const getTaskController = (req, res) => {
   const username = req.params.username;
-  console.log(username)
 
   AWS.config.update(AWS_config.aws_remote_config);
   const docClient = new AWS.DynamoDB.DocumentClient();
@@ -22,19 +21,3 @@ export const getTaskController = (req, res) => {
     else res.status(200).send(data);
   });
 };
-
-// docClient.scan(params, function (err, data) {
-//   if (err) {
-//     console.log(err);
-//     res.send({
-//       success: false,
-//       message: err,
-//     });
-//   } else {
-//     const { Items } = data;
-//     res.send({
-//       success: true,
-//       tasks: Items,
-//     });
-//   }
-// });
