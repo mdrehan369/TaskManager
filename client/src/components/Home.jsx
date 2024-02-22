@@ -18,10 +18,6 @@ function Home() {
       setLoading((prev) => !prev);
       return;
     };
-    // if(!user.username) {
-    //   setLoading((prev) => !prev);
-    //   return;
-    // }
     try {
       let res = await axios.get(`/api/getTasks/${user.username}`, {
         headers: { authorization: `Bearer ${token}` },
@@ -46,7 +42,7 @@ function Home() {
           setUser(res.data.data);
       }
     } catch(e) {
-      // console.log(e);
+      console.log(e);
     }
   } 
 

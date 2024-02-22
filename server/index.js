@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT;
 app.use(cors());
 
-connect("mongodb+srv://mdrehan4650:Sharukhian1234@taskmanager.5lltrjo.mongodb.net/?retryWrites=true&w=majority");
+connect(process.env.MONGO_URL);
 
 createTable();
 

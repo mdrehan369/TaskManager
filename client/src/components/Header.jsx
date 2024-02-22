@@ -33,7 +33,7 @@ function Header() {
 
   return (
     <header>
-        <div className="logo">Task Manager</div>
+        <div className="logo">Task Sphere</div>
         <nav>
             <ul>
                 {
