@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useUserContext } from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
-import "../../public/css/addTask.css";
+import "../css/addTask.css";
 
 function loadDate() {
   let date = new Date(),

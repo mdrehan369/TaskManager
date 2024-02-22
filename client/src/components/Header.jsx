@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import { useUserContext } from '../contexts/UserContext.js';
-import "../../public/css/header.css"
+import "../css/header.css"
 import axios from 'axios';
 
 function Header() {

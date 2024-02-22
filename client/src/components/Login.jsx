@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useUserContext } from '../contexts/UserContext';
 import { useNavigate } from 'react-router-dom';
-import "../../public/css/login.css";
+import "../css/login.css";
 
 function Login() {
     const [state, setState] = useState("password");

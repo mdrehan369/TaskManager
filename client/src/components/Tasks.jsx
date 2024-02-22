@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../public/css/tasks.css";
+import "../css/tasks.css";
 import axios from "axios";
 import { useUserContext } from "../contexts/UserContext";
 

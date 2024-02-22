@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../public/css/home.css";
+import "../css/home.css";
 import { useUserContext } from "../contexts/UserContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -54,10 +54,6 @@ function Home() {
     fetchData();
   }, [isUpdate]);
 
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-
   let i = 0;
 
   return (
@@ -71,7 +67,7 @@ function Home() {
       )}
 
       {
-        loading && (<img src="../../public/images/spinner.gif" width="3%"/>)
+        loading && (<img src="../images/spinner.gif" width="3%"/>)
       }
 
       {!loading && Object.keys(user).length !== 0 && (
