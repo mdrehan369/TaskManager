@@ -25,6 +25,8 @@ app.get("/api/getUser", checkToken, getUserController);
 
 app.use(taskRouter);
 
+// Added comments
+
 app.listen(PORT, () => {
   console.log(`Listening on port http://localhost:${PORT}`);
 });
